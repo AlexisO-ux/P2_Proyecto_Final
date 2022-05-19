@@ -22,7 +22,7 @@ class Granel : public Producto
 		}
 		void mostrar(){
 			cout<<"PRODUCTO: "<<nombre<<" DESCRIPCION: "<<descripcion<<" GRAMOS: "<<gramos<<" SUBTOTAL: "<<setSubtotal()<<endl;  
-		}//esto tambien borrarlo
+		}
 		
 };
 

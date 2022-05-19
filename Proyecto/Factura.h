@@ -76,11 +76,13 @@ class Factura
 		}
 		
 		void mostrar(){
-			cout<<"---Productos---"<<endl;
+			cout<<"|                PRODUCTOS                | "<<endl;
+			cout<<"-------------------------------------------"<<endl;
 			for(int i=0;i<items.size();i++){
-				cout<<endl;
-				cout<<items[i]->getNombre();
+				cout<<"     "<<items[i]->getNombre()<<endl;
+				 
 			}
+			cout<<"-------------------------------------------"<<endl;
 		}
 		
 		 

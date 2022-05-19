@@ -34,16 +34,15 @@ void Distribuidora::guardaFactura(Factura *f){
 
 void Distribuidora::listaFacturas(){
 	for(int i=0;i<facturas.size();i++){
-		cout<<facturas[i]->getRS();
-		cout<<endl;
-		cout<<facturas[i]->getRUC();
-		cout<<endl;
-		cout<<facturas[i]->getNFac();
-		cout<<endl;
-		cout<<facturas[i]->getSubT();
-		cout<<endl;
-		cout<<facturas[i]->getTotal();
-		cout<<endl;
+	cout<<endl<<"-------------------------------------------"<<endl<<
+		  "              FACTURA  "<<facturas[i]->getNFac()<<endl<<
+		  "-------------------------------------------"<<endl<<
+		  "     Num. Factura     |"<<"     "<<facturas[i]->getNFac()<<endl<< 
+		  "     Razon Social     |"<<"     "<<facturas[i]->getRS()<<endl<< 
+		  "         RUC          |"<<"     "<<facturas[i]->getRUC()<<endl<< 
+		  "       SubTotal       |"<<"     "<<facturas[i]->getSubT()<<endl<< 
+		  "         Total        |"<<"     "<<facturas[i]->getTotal()<<endl<<
+		  "-------------------------------------------"<<endl; 
 		facturas[i]->mostrar();
 		cout<<endl;
 	}
@@ -54,19 +53,19 @@ void Distribuidora::buscaFactura(string nF){//esto si
 	for(int i=0;i<facturas.size();i++){
 		if(facturas[i]->getNFac()==nF){
 			
-			cout<<facturas[i]->getRS();
-			cout<<endl;
-			cout<<facturas[i]->getRUC();
-			cout<<endl;
-			cout<<facturas[i]->getNFac();
-			cout<<endl;
-			cout<<facturas[i]->getSubT();
-			cout<<endl;
-			cout<<facturas[i]->getTotal();
-			cout<<endl;
+	cout<<endl<<"-------------------------------------------"<<endl<<
+		  "|                FACTURA                  | "<<endl<<
+		  "-------------------------------------------"<<endl<<
+		  "     Num. Factura     |"<<"     "<<facturas[i]->getNFac()<<endl<< 
+		  "     Razon Social     |"<<"     "<<facturas[i]->getRS()<<endl<< 
+		  "         RUC          |"<<"     "<<facturas[i]->getRUC()<<endl<< 
+		  "       SubTotal       |"<<"     "<<facturas[i]->getSubT()<<endl<< 
+		  "         Total        |"<<"     "<<facturas[i]->getTotal()<<endl<<
+		  "-------------------------------------------"<<endl; 
 			return;
 			
-		}else{
+		}
+		else{
 			
 			cout<<endl<<"No se encontro la factura";
 			
